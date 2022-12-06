@@ -1,0 +1,29 @@
+<style type="text/css">
+    @import url("../static/result.css");
+    
+    </style>
+<body class="backgroundimg">
+    <a href="http://127.0.0.1:5000/">
+    <button class="btn" >back</button>
+    </a>
+<div class="bodyposi">
+    <h1 class="font1">Found {{hits}} for query {{keywords}}: </h1>
+    {% for doc in docs %}
+    <div class="ploc">
+    <p class="font3">Title:</p>
+    <p class="font2"> {{doc["_source"]['title']}}</p>&nbsp&nbsp&nbsp 
+    <p class="font3">Author:</p>
+    <p class="font2">{{doc["_source"]['author']}}</p> &nbsp&nbsp
+    <p class="font3">Language:</p> 
+    <p class="font2">{{doc["_source"]['language']}}</p>&nbsp&nbsp&nbsp 
+    <p class="font3">Rating Count:</p> 
+    <p class="font2">{{doc["_source"]['rating_count']}}</p>&nbsp&nbsp&nbsp
+    </div>
+    <div class="ploc">
+    <p class="font3">URL:</p> 
+    <p class="font2">{{doc["_source"]['goodreads_url']}}</p>
+    </div>
+    <p class="font2">{{doc["_source"]['description']}}</p>
+    {% endfor %}
+</div>
+</body>

@@ -1,0 +1,98 @@
+/* CSS Document */
+.backgroundimg{
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 100%;
+	width: 100%;
+	opacity: 0.8;
+	z-index: -1;
+	position: absolute;
+}
+
+.bar1{
+	position: absolute;
+	left: 50%;
+	top: 40%;
+	transform: translate(-50%, -50%);
+	width: 50%;
+}
+
+
+.bar2{
+	width: 350px;
+	height: 35px;
+	background-color: rgb(255, 255, 255);
+	border-bottom-left-radius: 50px;
+	border-top-left-radius: 50px;
+	margin-top: 5px;
+	margin-left: 20%;
+	font-size: 16px;
+	padding-left: 15px;
+	border: 0px;
+	color: black;
+	outline: none;
+	padding-left: 15px;
+
+}
+
+.button{
+	  width: 15%;
+        height: 37px;
+        background-color: rgb(240, 238, 238);
+        /* background-color: rgb(3, 20, 152); */
+        border: 0px;
+        margin-left: -5px;
+		border-bottom-right-radius: 50px;
+		border-top-right-radius: 50px;
+        color: rgb(116, 116, 116);
+        font-size: 20px;
+        position: relative;
+        top: 1px;
+
+
+}
+
+
+.font{
+		font: 96px Caslon; /*设置字体和字体大小*/
+		margin:50px auto; /*设置元素外边距*/
+		font-weight: 500; /*设置字体粗细*/
+		text-align: center; /*设置文字居中*/
+		/*color: 	#0000AA ; /*设置文字颜色*/
+	    -webkit-animation:bounce 2s infinite;/*设置动画*/
+		background: linear-gradient(90deg, red, blue);
+		-webkit-text-fill-color: transparent;
+		-webkit-background-clip: text;
+		}
+		@-webkit-keyframes bounce{/*创建动画*/
+		   0%,100%,20%,50%,80%{
+		      -webkit-transform:translateY(0);
+		   }40%{
+		      -webkit-transform:translateY(-30px);
+		   }60%{
+		      -webkit-transform:translateY(-15px);
+		   }
+		}
+
+
+.buttloc{
+	position: absolute;
+	left: 30%;
+	top: 110%;
+	float: left;
+}
+
+.font1{
+	font: 20px Georgia,serif;
+	text-shadow: 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+	color:#fff;
+}
+
+.bottfont{
+	font: 30px "Brush Script MT";
+	text-shadow: 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+	color:#fff;
+	position: absolute;
+	top: 90%;
+	left: 39%;
+}
